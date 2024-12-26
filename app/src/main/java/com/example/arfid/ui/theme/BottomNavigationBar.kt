@@ -9,9 +9,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
 import com.example.arfid.R
-import com.example.arfid.ui.theme.BottomNavigationBar
 
 sealed class BottomNavigationBar (val title:String, val icon:Int, val route:String) {
     object ueber_arfid : BottomNavigationBar("Über ARFID", R.drawable.ic_arfid, "Über ARFID")
@@ -42,7 +40,11 @@ fun BottomNavigationBar(navController: NavController) {
     NavigationBar {
         items.forEach { item ->
             NavigationBarItem(
-                icon = { Icon(painterResource(id = item.icon), contentDescription = item.title) },
+                icon = { Icon(
+                    painterResource(id = item.icon),
+                    contentDescription = item.title)
+
+                     },
                 label = { Text(item.title) },
                 selected = currentRoute == item.route,
                 onClick = {

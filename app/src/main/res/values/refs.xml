@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="ic_expertennetzwerk">expertennetzwerk</drawable>
-    <drawable name="ic_arfid">arfid</drawable>
-    <drawable name="ic_nachricht">nachricht</drawable>
-    <drawable name="ic_forum">forum</drawable>
-    <drawable name="ic_entdecken">entdecken</drawable>
-    <drawable name="ic_spielen">spielen</drawable>
+
 </resources>

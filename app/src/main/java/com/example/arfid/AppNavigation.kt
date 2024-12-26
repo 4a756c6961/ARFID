@@ -1,19 +1,21 @@
 package com.example.arfid
-
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavBackStackEntry
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material3.Text
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.material3.Icon
+import com.example.arfid.ui.theme.ARFIDTheme
+import androidx.compose.ui.tooling.preview.Preview as Preview1
 
 @Composable
 fun AppNavigation() {
@@ -22,41 +24,37 @@ fun AppNavigation() {
     Scaffold(bottomBar = {
         NavigationBar {
             val navBackStackEntry by navController.currentBackStackEntryAsState()
-            val currentDestination: NavBackStackEntry? = navBackStackEntry?.destination
+            val currentDestination = navBackStackEntry?.destination
 
-            listOfNavItems.forEach {navItems ->
+            listOfNavItems.forEach { navItems ->
                 NavigationBarItem(
-                    selected = currentDestination?.hierarchy?.any { it.route == navItems.route } == true,
+                    selected = currentDestination?.route == navItems.route,
                     onClick = {
-                        navController.navigate(navItems.route){
-                            popUpTo(navController.graph.findStartDestination().id){
+                        navController.navigate(navItems.route) {
+                            popUpTo(navController.graph.startDestinationId) {
                                 saveState = true
                             }
                             launchSingleTop = true
                             restoreState = true
-
-
                         }
                     },
                     label = {
                         Text(text = navItems.label)
                     },
                     icon = {
-                        Icon(imageVector = navItems.icon,
-                            contentDescription = null)
-                    },
-
+                        Icon(
+                            painter = painterResource(id = navItems.iconId),
+                            contentDescription = null
+                        )
+                    }
                 )
-
             }
         }
-    }
-    ) { paddingValues ->
+    }) { paddingValues ->
         NavHost(
             navController = navController,
             startDestination = Screens.ueber_arfid_screen,
             modifier = Modifier.padding(paddingValues)
-
         ) {
             composable(route = Screens.ueber_arfid_screen.name) {
                 UeberArfidScreen()
@@ -67,7 +65,7 @@ fun AppNavigation() {
             composable(route = Screens.ExpertennetzwerkScreen.name) {
                 ExpertennetzwerkScreen()
             }
-
         }
     }
 }
+

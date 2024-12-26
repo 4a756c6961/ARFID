@@ -3,11 +3,11 @@
     <string name="title_activity_doctor">DoctorActivity</string>
     <string name="title_activity_child">ChildActivity</string>
     <string name="title_activity_parent">ParentActivity</string>
-    <string name="informationen_f_r_eltern">Informationen für Eltern</string>
-    <string name="informationen_f_r_kinder">Informationen für Kinder</string>
-    <string name="informationen_f_r_fachkraefte">Informationen für Fachkräfte</string>
+    <string name="informationen_fuer_eltern">Informationen für Eltern</string>
+    <string name="informationen_fuer_kinder">Informationen für Kinder</string>
+    <string name="informationen_fuer_fachkraefte">Informationen für Fachkräfte</string>
     <!-- Card 1: Greeting -->
-    <string name="Greeting">Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
+    <string name="greeting">Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
 
     <!-- Card 2: Informationen für Eltern -->
     <string name="card_eltern_headline">Elternteil</string>
@@ -20,5 +20,6 @@
     <!-- Card 2: Informationen für Kinder -->
     <string name="card_kind_headline">Kind oder Jugendlicher</string>
     <string name="card_kind_subheadline">Ich bin selbst von ARFID betroffen.</string>
+    <string name="Greeting">Greeting</string>
 
 </resources>

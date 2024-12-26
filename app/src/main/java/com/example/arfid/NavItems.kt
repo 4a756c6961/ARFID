@@ -1,30 +1,26 @@
 package com.example.arfid
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Notifications
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.ui.graphics.vector.ImageVector
+
 
 data class NavItems(
     val label: String,
-    val icon:ImageVector,
+    val iconId: Int,
     val route: String
 )
 
 val listOfNavItems = listOf(
     NavItems(
         label = "Expertennetzwerk",
-        icon = Icons.Default.Home,
+        iconId = R.drawable.ic_expertennetzwerk,
         route = Screens.ExpertennetzwerkScreen.name
     ),
     NavItems(
         label = "Nachrichten",
-        icon = Icons.Default.Notifications,
+        iconId = R.drawable.ic_nachricht,
         route = Screens.NachrichtenScreen.name
     ),
     NavItems(
         label = "Über ARFID",
-        icon = Icons.Default.Person,
+        iconId = R.drawable.ic_arfid,
         route = Screens.ueber_arfid_screen.name
     ),
 )
