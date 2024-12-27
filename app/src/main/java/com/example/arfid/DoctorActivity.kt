@@ -111,7 +111,7 @@ fun Greeting1(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview1() {
     ARFIDTheme {
-        Greeting4("BesucherInnen")
+        Greeting1("BesucherInnen")
         DocScreen()
     }
 }
