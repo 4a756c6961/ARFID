@@ -22,4 +22,12 @@
     <string name="card_kind_subheadline">Ich bin selbst von ARFID betroffen.</string>
     <string name="Greeting">Greeting</string>
 
+    <!-- Card Titles and Subtitles -->
+    <string name="arfid_verstehen_title">ARFID verstehen</string>
+    <string name="arfid_verstehen_subtitle">Alles über die Essstörung Ihres Kindes.</string>
+    <string name="kind_unterstuetzen_title">Ihr Kind unterstützen</string>
+    <string name="kind_unterstuetzen_subtitle">So können Sie als Elternteil Ihr Kind unterstützen.</string>
+    <string name="erfahrungsberichte_title">Erfahrungsberichte</string>
+    <string name="erfahrungsberichte_subtitle">Lesen Sie hier über die Erfahrungen anderer Eltern.</string>
+
 </resources>
