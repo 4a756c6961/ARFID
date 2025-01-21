@@ -17,7 +17,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextField
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -45,6 +44,7 @@ class ExpertensucheScreenActivity : ComponentActivity() {
         }
     }
 }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ExpertensucheScreen() {
@@ -151,10 +151,7 @@ fun SearchBar(query: String, onQueryChanged: (String) -> Unit, onSearchClicked: 
                 Text(text = "Suche Experten...")
             },
             modifier = Modifier.weight(1f),
-            colors = TextFieldDefaults.textFieldColors(
-                focusedIndicatorColor = Color.Blue,
-                unfocusedIndicatorColor = Color.Gray
-            )
+
         )
 
         // Button für die Suche
