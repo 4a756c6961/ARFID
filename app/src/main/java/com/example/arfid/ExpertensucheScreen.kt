@@ -64,7 +64,7 @@ fun ExpertensucheScreen() {
     val filteredExperts = experts.filter {
         it.name.contains(searchQuery, ignoreCase = true) ||
                 it.specialization.contains(searchQuery, ignoreCase = true) ||
-                it.street.contains(searchQuery, ignoreCase = true)
+                it.city.contains(searchQuery, ignoreCase = true)
     }
 
     Column(modifier = Modifier.fillMaxSize()) {

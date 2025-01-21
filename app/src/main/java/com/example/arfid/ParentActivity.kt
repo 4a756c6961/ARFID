@@ -76,7 +76,7 @@ fun ParentScreen() {
                 startDestination = "home",
                 modifier = Modifier.weight(1f)
             ) {
-                composable("home") { MainActivity() } // MainActivity als Composable-Content
+                composable("home") {  }
                 composable("wissen") { WissenScreen() }
                 composable("expertensuche") { ExpertensucheScreen() }
                 composable("forum") { ForumScreen() }
@@ -84,10 +84,6 @@ fun ParentScreen() {
         }
     }
 }
-
-
-
-
 
 @Composable
 fun ParentBottomNavigationBar(navController: NavController) {
