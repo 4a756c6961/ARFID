@@ -1,23 +1,28 @@
 package com.example.arfid
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -28,6 +33,17 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.arfid.ui.theme.ARFIDTheme
+import android.content.Intent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.NavigationBarItemDefaults
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 
 
 class ParentActivity : ComponentActivity() {
@@ -42,44 +58,104 @@ class ParentActivity : ComponentActivity() {
     }
 }
 
-
 @Composable
 fun ParentScreen() {
     val navController = rememberNavController()
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
-        bottomBar = { ParentBottomNavigationBar(navController) }
+        bottomBar = { ParentBottomNavigationBar(navController)
+        }
     ) { innerPadding ->
-        val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
-
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(innerPadding)
+        NavHost(
+            navController = navController,
+            startDestination = "wissen",
+            modifier = Modifier.padding(innerPadding)
         ) {
-            // Begrüßungstext nur anzeigen, wenn die Route "home" ist
-            if (currentRoute == "home") {
-                Text(
-                    text = "Willkommen in der App! Hier findest du alle wichtigen Informationen.",
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier
-                        .padding(16.dp)
-                        .fillMaxWidth()
-                )
-            }
+            composable("wissen") { ParentHomeScreen() }
+            composable("expertensuche") { ExpertensucheScreen() }
+            composable("forum") { ForumScreen() }
+        }
+    }
+}
 
-            // Navigation Host
-            NavHost(
-                navController = navController,
-                startDestination = "home",
-                modifier = Modifier.weight(1f)
+@Composable
+fun ParentHomeScreen() {
+    val context = LocalContext.current
+    val scrollState = rememberScrollState()
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color(0xFFFFFCFB))
+            .verticalScroll(scrollState)
+            .padding(16.dp)
+    ) {
+        ElevatedCardContent(
+            imageRes = R.drawable.arfid_verstehen,
+            title = stringResource(id = R.string.title_arfid_verstehen),
+            subtitle = stringResource(id = R.string.subtitle_arfid_verstehen),
+            onClick = {
+            val intent = Intent(context, ScreenArfidVerstehen01::class.java)
+            context.startActivity(intent)})
+
+        Spacer(modifier = Modifier.height(16.dp))
+        ElevatedCardContent(
+            imageRes = R.drawable.kind_unterstuetzen,
+            title = stringResource(id = R.string.title_kind_unterstuetzen),
+            subtitle = stringResource(id = R.string.subtitle_kind_unterstuetzen),
+            onClick = {val intent = Intent(context, ScreenKindUnterstuetzen01::class.java)
+                context.startActivity(intent)})
+
+        Spacer(modifier = Modifier.height(16.dp))
+        ElevatedCardContent(
+            imageRes = R.drawable.erfahrungsberichte,
+            title = stringResource(id = R.string.title_erfahrungsberichte),
+            subtitle = stringResource(id = R.string.subtitle_erfahrungsberichte),
+            onClick = {})
+    }
+}
+
+@Composable
+fun ElevatedCardContent(imageRes: Int, onClick: () -> Unit, title: String, subtitle: String ) {
+    ElevatedCard(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 5.dp)
+            .clickable { onClick() },
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = Color(0xFF375E5E)
+        ),
+        shape = RoundedCornerShape(12.dp),
+        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 4.dp)
+    ) {
+        Column(
+            modifier = Modifier.padding(0.dp)
+        ) {
+            Image(
+                painter = painterResource(id = imageRes),
+                contentDescription = null,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(170.dp),
+                contentScale = ContentScale.Crop
+            )
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
             ) {
-                composable("home") {  }
-                composable("wissen") { WissenScreen() }
-                composable("expertensuche") { ExpertensucheScreen() }
-                composable("forum") { ForumScreen() }
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold),
+                    color = Color.White
+                )
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color.White
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+
             }
         }
     }
@@ -90,32 +166,28 @@ fun ParentBottomNavigationBar(navController: NavController) {
     val navItems = listOf(
         ParentNavItem("home", "Home", R.drawable.ic_home),
         ParentNavItem("wissen", "Wissen", R.drawable.ic_wissen),
-        ParentNavItem("expertensuche", "Experten", R.drawable.ic_suche),
+        ParentNavItem("expertensuche", "Expertensuche", R.drawable.ic_suche),
         ParentNavItem("forum", "Forum", R.drawable.ic_forum)
     )
 
-    NavigationBar {
-        val context = LocalContext.current
+    NavigationBar (
+        modifier = Modifier
+        .border(1.dp, Color.LightGray),
+        containerColor = Color(0xFFFFFCFB),
+        contentColor = Color.Black
+    ) {
         val currentBackStackEntry = navController.currentBackStackEntryAsState().value
         val currentRoute = currentBackStackEntry?.destination?.route
 
         navItems.forEach { item ->
             NavigationBarItem(
                 selected = currentRoute == item.route,
-                onClick = { if (item.route == "home") {
-                    // Intent für MainActivity auslösen
-                    val intent = Intent(context, MainActivity::class.java).apply {
-                        flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-                    }
-                    context.startActivity(intent)
-                } else {
-                    // Navigation zu einer anderen Route
+                onClick = {
                     navController.navigate(item.route) {
                         popUpTo(navController.graph.startDestinationId) { saveState = true }
                         launchSingleTop = true
                         restoreState = true
                     }
-                }
                 },
                 icon = {
                     Icon(
@@ -124,7 +196,12 @@ fun ParentBottomNavigationBar(navController: NavController) {
                         modifier = Modifier.size(24.dp)
                     )
                 },
-                label = { Text(text = item.label) }
+                label = { Text(text = item.label) },
+
+                        colors = NavigationBarItemDefaults.colors(
+                        indicatorColor = Color(0xFFF2EBE6)
+                        )
+
             )
         }
     }

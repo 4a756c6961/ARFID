@@ -24,35 +24,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import androidx.core.content.FileProvider
-import java.io.File
-import java.io.FileOutputStream
-
-fun openPdfFromRawGuide(context: Context) {
-    val pdfFile = File(context.cacheDir, "ueber_arfid_sprechen.pdf")
-    if (!pdfFile.exists()) {
-        // Copy PDF from raw resources to cache
-        context.resources.openRawResource(R.raw.ueber_arfid_sprechen).use { input ->
-            FileOutputStream(pdfFile).use { output ->
-                input.copyTo(output)
-            }
-        }
-    }
-
-    val pdfUri = FileProvider.getUriForFile(context, "${context.packageName}.provider", pdfFile)
-
-    val intent = Intent(Intent.ACTION_VIEW).apply {
-        setDataAndType(pdfUri, "application/pdf")
-        addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-    }
-
-    try {
-        context.startActivity(intent)
-    } catch (e: Exception) {
-        e.printStackTrace()
-    }
-}
 
 class ScreenKindUnterstuetzen04 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -131,57 +102,27 @@ fun ScreenKindUnterstuetzen04Content (context: Context) {
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_title_Slide_4),
                     style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 16.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_4_intro),
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_4_bullet_point_1),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_4_bullet_point_2),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_4_bullet_point_3),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
-
-                Button(
-                    onClick = { openPdfFromRawGuide(context) },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(80.dp)
-                        .padding(horizontal = 16.dp, vertical = 16.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFFEFEFEF),
-                        contentColor = Color(0xFF004D40)
-                    ),
-                    shape = RoundedCornerShape(12.dp)
-                ) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.Start
-                    ) {
-                        Icon(
-                            painter = painterResource(id = R.drawable.ic_download),
-                            contentDescription = "Download PDF",
-                            modifier = Modifier.size(32.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text(
-                            text = "Guide: Über ARFID sprechen",
-                            style = MaterialTheme.typography.bodyLarge.copy(fontSize = 18.sp)
-                        )
-                    }
-                }
-
 
             }
 

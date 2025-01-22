@@ -109,11 +109,11 @@ fun ScreenArfidVerstehen01 (context: Context) {
                 Text(
                     text = stringResource(id = R.string.title_Slide_1),
                     style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 16.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.content_Slide_1),
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
 
 

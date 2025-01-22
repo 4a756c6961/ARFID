@@ -24,7 +24,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 class ScreenKindUnterstuetzen05 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -103,52 +102,23 @@ fun ScreenKindUnterstuetzen05 (context: Context) {
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_title_Slide_5),
                     style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 16.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_5_intro),
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_5_bullet_point_1),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_5_bullet_point_2),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
 
-                Button(
-                    onClick = {
-                        // Platzhalter
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(80.dp)
-                        .padding(horizontal = 16.dp, vertical = 16.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFFEFEFEF),
-                        contentColor = Color(0xFF004D40)
-                    ),
-                    shape = RoundedCornerShape(12.dp)
-                ) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.Center
-                    ) {
-                        Icon(
-                            painter = painterResource(id = R.drawable.ic_suche),
-                            contentDescription = "Zur Expertensuche",
-                            modifier = Modifier.size(32.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text(
-                            text = "Zur Experten-Suche",
-                            style = MaterialTheme.typography.bodyLarge.copy(fontSize = 18.sp))
-                    }
-                }
             }
 
 

@@ -101,32 +101,32 @@ fun ScreenKindUnterstuetzen01 (context: Context) {
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_title_Slide_1),
                     style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 16.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_1_intro),
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_1_bullet_point_1),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_1_bullet_point_2),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_1_bullet_point_3),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(horizontal = 16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
 
                 Text(
                     text = stringResource(id = R.string.kind_unterstuetzen_slide_1_conclusion),
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
 
 

@@ -7,7 +7,7 @@
     <string name="informationen_fuer_kinder">Informationen für Kinder</string>
     <string name="informationen_fuer_fachkraefte">Informationen für Fachkräfte</string>
     <!-- Card 1: Greeting -->
-    <string name="greeting">Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
+    <string name="greeting">Hallo! Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
 
     <!-- Card 2: Informationen für Eltern -->
     <string name="card_eltern_headline">Elternteil</string>
@@ -49,18 +49,18 @@
         ist es wichtig, ARFID besser zu verstehen.
         Mit der richtigen Unterstützung können Sie Ihrem Kind helfen, diese Herausforderung zu bewältigen.
     </string>
-    <string name="content_Slide_2">
+    <string name="content_Slide_2_intro">
         Es ist normal, dass Kinder manchmal wählerisch beim Essen sind. Aber wie können Sie erkennen, ob das Verhalten Ihres Kindes auf ARFID hinweist? Achten Sie auf diese Anzeichen:
-
-        • Ihr Kind isst nur eine kleine Auswahl an Lebensmitteln. Vielleicht isst Ihr Kind immer dieselben Gerichte, wie trockene Nudeln, Toast oder bestimmte Snacks, und weigert sich, Neues zu probieren.
-
-        • Ihr Kind zeigt starke Ablehnung gegenüber bestimmten Lebensmitteln. Konsistenzen, Farben oder Gerüche können bei Ihrem Kind Ekel oder sogar Angst auslösen.
-
-        • Ihr Kind meidet Mahlzeiten in sozialen Situationen. Es möchte vielleicht nicht bei Familienessen oder Geburtstagen teilnehmen, weil es sich beim Essen unwohl fühlt.
-
-        • Körperliche Veränderungen sind sichtbar. Sie bemerken, dass Ihr Kind an Gewicht verliert, langsamer wächst oder Nahrungsergänzungsmittel benötigt.
-
-        Wenn Sie sich in diesen Punkten wiedererkennen, könnte ARFID die Ursache sein. Je früher Sie handeln, desto besser können Sie Ihrem Kind helfen.
+    </string>
+    <string name="content_slide_2_bullet_point_1">- Ihr Kind isst nur eine kleine Auswahl an Lebensmitteln. Vielleicht isst Ihr Kind immer dieselben Gerichte, wie trockene Nudeln, Toast oder bestimmte Snacks, und weigert sich, Neues zu probieren.
+    </string>
+    <string name="content_slide_2_bullet_point_2">- Ihr Kind zeigt starke Ablehnung gegenüber bestimmten Lebensmitteln. Konsistenzen, Farben oder Gerüche können bei Ihrem Kind Ekel oder sogar Angst auslösen.
+    </string>
+    <string name="content_slide_2_bullet_point_3">- Ihr Kind meidet Mahlzeiten in sozialen Situationen. Es möchte vielleicht nicht bei Familienessen oder Geburtstagen teilnehmen, weil es sich beim Essen unwohl fühlt.
+    </string>
+    <string name="content_slide_2_bullet_point_4">- Körperliche Veränderungen sind sichtbar. Sie bemerken, dass Ihr Kind an Gewicht verliert, langsamer wächst oder Nahrungsergänzungsmittel benötigt.
+    </string>
+    <string name="content_slide_2_outro">Wenn Sie sich in diesen Punkten wiedererkennen, könnte ARFID die Ursache sein. Je früher Sie handeln, desto besser können Sie Ihrem Kind helfen.
     </string>
     <string name="content_slide_3_intro">
         Vielleicht fragen Sie sich, warum Ihr Kind ein solches Essverhalten entwickelt hat. ARFID entsteht oft durch eine Kombination aus verschiedenen Faktoren:
