@@ -31,6 +31,11 @@
         <activity android:name=".ScreenKindUnterstuetzen05" />
         <activity android:name=".ScreenKindUnterstuetzen06" />
 
+        <activity android:name=".ErfahrungsberichteActivity" />
+        <activity android:name=".ErfahrungsberichtDetailActivity" />
+        <activity android:name=".ErfahrungsberichtErstellenActivity" />
+
+
         <activity
             android:name=".ParentActivity"
             android:exported="false"

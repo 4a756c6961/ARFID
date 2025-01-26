@@ -111,7 +111,8 @@ fun ParentHomeScreen() {
             imageRes = R.drawable.erfahrungsberichte,
             title = stringResource(id = R.string.title_erfahrungsberichte),
             subtitle = stringResource(id = R.string.subtitle_erfahrungsberichte),
-            onClick = {})
+            onClick = {val intent = Intent(context, ErfahrungsberichteActivity::class.java)
+                context.startActivity(intent)})
     }
 }
 

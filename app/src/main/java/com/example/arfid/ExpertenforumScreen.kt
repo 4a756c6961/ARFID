@@ -11,11 +11,11 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun NachrichtenScreen() {
+fun ExpertenforumScreen() {
     Box(modifier = Modifier
         .fillMaxSize(),
         contentAlignment = Alignment.Center){
-        Text(text = "Nachrichten",
+        Text(text = "Expertenforum",
             fontFamily = FontFamily.SansSerif,
             fontSize = 30.sp)
     }

@@ -165,4 +165,9 @@
 
     <string name="google_maps_api_key">AIzaSyCNH3Lj_ZgN0anOYx0GdTFsWt5X10X9LR4</string>
 
+    <!-- Bereich Erfahrungsberichte -->
+        <string name="headline_erfahrungsberichte">Erfahrungsberichte von Eltern</string>
+        <string name="intro_erfahrungsberichte">Sie sind nicht allein. Hier teilen Eltern ihre Erfahrungen mit ARFID.</string>
+
+
     </resources>
