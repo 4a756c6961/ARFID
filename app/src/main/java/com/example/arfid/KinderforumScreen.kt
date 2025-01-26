@@ -11,11 +11,11 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun ErfahrungsberichteScreen() {
+fun KinderForumScreen() {
     Box(modifier = Modifier
       .fillMaxSize(),
         contentAlignment = Alignment.Center){
-        Text(text = "Erfahrungen im Umgang mit ARFID",
+        Text(text = "Forum für Kinder",
             fontFamily = FontFamily.SansSerif,
             fontSize = 30.sp)
     }

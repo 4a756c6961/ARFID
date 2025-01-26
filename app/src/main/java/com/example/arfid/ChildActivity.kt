@@ -20,7 +20,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.arfid.R.drawable.ic_entdecken
 import com.example.arfid.ui.theme.ARFIDTheme
 
 
@@ -52,7 +51,7 @@ fun ChildScreen() {
             composable("home_child") { ChildActivity() }
             composable("arfid_verstehen") { ArfidVerstehenScreen() }
             composable("spiele") { SpieleScreen()}
-            composable("erfahrungsberichte") { ErfahrungsberichteScreen() }
+            composable("kinderforum") { KinderForumScreen() }
         }
     }
 }
@@ -61,9 +60,9 @@ fun ChildScreen() {
 fun ChildBottomNavigationBar(navController: NavController) {
     val navItems = listOf(
         ChildNavItem("home_child", "Home", R.drawable.ic_home),
-        ChildNavItem("arfid_verstehen", "ARFID verstehen", R.drawable.ic_arfid),
-        ChildNavItem("spiele", "Spiele", R.drawable.ic_spielen),
-        ChildNavItem("erfahrungsberichte", "Erfahrungen", ic_entdecken)
+        ChildNavItem("arfid_verstehen", "Entdecken", R.drawable.ic_arfid),
+        ChildNavItem("spiele", "Spielen", R.drawable.ic_spielen),
+        ChildNavItem("kinderforum", "Forum", R.drawable.ic_forum)
     )
 
     NavigationBar {

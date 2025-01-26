@@ -20,7 +20,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.arfid.R.drawable.ic_nachricht
 import com.example.arfid.ui.theme.ARFIDTheme
 
 
@@ -51,8 +50,8 @@ fun DocScreen() {
         ) {
             composable("home") { DoctorActivity() }
             composable("ueber_arfid") { UeberArfidScreen() }
-            composable("expertennetzwerk") { ExpertennetzwerkScreen()}
-            composable("Nachrichten") { NachrichtenScreen() }
+            composable("expertenregister") { ExpertenregisterScreen()}
+            composable("expertenforum") { ExpertenforumScreen() }
         }
     }
 }
@@ -62,8 +61,8 @@ fun DocBottomNavigationBar(navController: NavController) {
     val navItems = listOf(
         NavItem("home", "Home", R.drawable.ic_home),
         NavItem("ueber_arfid", "Über ARFID", R.drawable.ic_arfid),
-        NavItem("expertennetzwerk", "Expertennetzwerk", R.drawable.ic_expertennetzwerk),
-        NavItem("nachrichten", "Nachrichten", ic_nachricht)
+        NavItem("expertenregister", "Register", R.drawable.ic_expertennetzwerk),
+        NavItem("expertenforum", "Forum", R.drawable.ic_forum)
     )
 
     NavigationBar {

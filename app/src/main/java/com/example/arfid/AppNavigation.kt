@@ -12,10 +12,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material3.Text
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.material3.Icon
-import com.example.arfid.ui.theme.ARFIDTheme
-import androidx.compose.ui.tooling.preview.Preview as Preview1
 
 @Composable
 fun AppNavigation() {
@@ -60,10 +57,10 @@ fun AppNavigation() {
                 UeberArfidScreen()
             }
             composable(route = Screens.NachrichtenScreen.name) {
-                NachrichtenScreen()
+                ExpertenforumScreen()
             }
             composable(route = Screens.ExpertennetzwerkScreen.name) {
-                ExpertennetzwerkScreen()
+                ExpertenregisterScreen()
             }
         }
     }
