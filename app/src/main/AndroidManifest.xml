@@ -13,12 +13,29 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_arfid"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_arfid_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ARFID"
         tools:targetApi="31" >
+
+        <activity android:name=".ScreenArfidVerstehen01" />
+        <activity android:name=".ScreenArfidVerstehen02" />
+        <activity android:name=".ScreenArfidVerstehen03" />
+        <activity android:name=".ScreenArfidVerstehen04" />
+        <activity android:name=".ScreenKindUnterstuetzen01" />
+        <activity android:name=".ScreenKindUnterstuetzen02" />
+        <activity android:name=".ScreenKindUnterstuetzen03" />
+        <activity android:name=".ScreenKindUnterstuetzen04" />
+        <activity android:name=".ScreenKindUnterstuetzen05" />
+        <activity android:name=".ScreenKindUnterstuetzen06" />
+
+        <activity android:name=".ErfahrungsberichteActivity" />
+        <activity android:name=".ErfahrungsberichtDetailActivity" />
+        <activity android:name=".ErfahrungsberichtErstellenActivity" />
+
+
         <activity
             android:name=".ParentActivity"
             android:exported="false"
@@ -45,6 +62,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_api_key" />

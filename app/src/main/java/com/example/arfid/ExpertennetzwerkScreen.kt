@@ -12,7 +12,7 @@ import androidx.compose.material3.Text
 
 
 @Composable
-fun ExpertennetzwerkScreen() {
+fun ExpertenregisterScreen() {
     Box(modifier = Modifier
         .fillMaxSize(),
         contentAlignment = Alignment.Center){

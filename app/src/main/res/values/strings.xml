@@ -7,7 +7,7 @@
     <string name="informationen_fuer_kinder">Informationen für Kinder</string>
     <string name="informationen_fuer_fachkraefte">Informationen für Fachkräfte</string>
     <!-- Card 1: Greeting -->
-    <string name="greeting">Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
+    <string name="greeting">Hallo! Sag uns, wer du bist, damit wir dir die passenden Informationen bereitstellen können.</string>
 
     <!-- Card 2: Informationen für Eltern -->
     <string name="card_eltern_headline">Elternteil</string>
@@ -22,4 +22,152 @@
     <string name="card_kind_subheadline">Ich bin selbst von ARFID betroffen.</string>
     <string name="Greeting">Greeting</string>
 
-</resources>
+    <!-- Parent Home Screen -->
+    <string name="title_arfid_verstehen">ARFID verstehen</string>
+    <string name="subtitle_arfid_verstehen">Alles über die Essstörung Ihres Kindes.</string>
+    <string name="title_kind_unterstuetzen">Ihr Kind unterstützen</string>
+    <string name="subtitle_kind_unterstuetzen">So können Sie als Elternteil Ihr Kind unterstützen</string>
+    <string name="title_erfahrungsberichte">Erfahrungsberichte</string>
+    <string name="subtitle_erfahrungsberichte">Lesen Sie hier über die Erfahrungen anderer Eltern</string>
+
+
+    <!-- Bereich ARFID verstehen -->
+
+    <!-- Titel -->
+    <string name="title_Slide_1">Was ist ARFID?</string>
+    <string name="title_Slide_2">Symptome erkennen</string>
+    <string name="title_slide_3">Was ist die Ursache von ARFID</string>
+    <string name="title_slide_4">Warum ist es wichtig, frühzeitig zu handeln?</string>
+
+    <!-- Beschreibungen -->
+    <string name="content_Slide_1">
+        ARFID steht für Avoidant/Restrictive Food Intake Disorder und ist eine Essstörung, die vor allem Kinder betrifft.
+        Vielleicht haben Sie bemerkt, dass Ihr Kind bestimmte Lebensmittel ablehnt oder nur eine sehr eingeschränkte Auswahl an Speisen isst.
+        Anders als bei anderen Essstörungen wie Anorexie geht es bei ARFID nicht um das Gewicht oder die Figur.
+        Stattdessen können Ängste, sensorische Empfindlichkeiten oder ein mangelndes Interesse am Essen die Ursache sein.
+        Wenn Essen zu einem täglichen Kampf wird und Sie merken, dass Ihr Kind unter diesem Verhalten leidet,
+        ist es wichtig, ARFID besser zu verstehen.
+        Mit der richtigen Unterstützung können Sie Ihrem Kind helfen, diese Herausforderung zu bewältigen.
+    </string>
+    <string name="content_Slide_2_intro">
+        Es ist normal, dass Kinder manchmal wählerisch beim Essen sind. Aber wie können Sie erkennen, ob das Verhalten Ihres Kindes auf ARFID hinweist? Achten Sie auf diese Anzeichen:
+    </string>
+    <string name="content_slide_2_bullet_point_1">- Ihr Kind isst nur eine kleine Auswahl an Lebensmitteln. Vielleicht isst Ihr Kind immer dieselben Gerichte, wie trockene Nudeln, Toast oder bestimmte Snacks, und weigert sich, Neues zu probieren.
+    </string>
+    <string name="content_slide_2_bullet_point_2">- Ihr Kind zeigt starke Ablehnung gegenüber bestimmten Lebensmitteln. Konsistenzen, Farben oder Gerüche können bei Ihrem Kind Ekel oder sogar Angst auslösen.
+    </string>
+    <string name="content_slide_2_bullet_point_3">- Ihr Kind meidet Mahlzeiten in sozialen Situationen. Es möchte vielleicht nicht bei Familienessen oder Geburtstagen teilnehmen, weil es sich beim Essen unwohl fühlt.
+    </string>
+    <string name="content_slide_2_bullet_point_4">- Körperliche Veränderungen sind sichtbar. Sie bemerken, dass Ihr Kind an Gewicht verliert, langsamer wächst oder Nahrungsergänzungsmittel benötigt.
+    </string>
+    <string name="content_slide_2_outro">Wenn Sie sich in diesen Punkten wiedererkennen, könnte ARFID die Ursache sein. Je früher Sie handeln, desto besser können Sie Ihrem Kind helfen.
+    </string>
+    <string name="content_slide_3_intro">
+        Vielleicht fragen Sie sich, warum Ihr Kind ein solches Essverhalten entwickelt hat. ARFID entsteht oft durch eine Kombination aus verschiedenen Faktoren:
+    </string>
+    <string name="content_slide_3_bullet_point_1">- Sensorische Empfindlichkeiten: Ihr Kind reagiert möglicherweise sehr empfindlich auf den Geschmack, die Konsistenz oder den Geruch bestimmter Lebensmittel. Das kann dazu führen, dass es diese komplett meidet.</string>
+    <string name="content_slide_3_bullet_point_2">- Negative Erfahrungen beim Essen: Vielleicht hat Ihr Kind sich einmal an einem Lebensmittel verschluckt oder musste erbrechen. Solche Erfahrungen können Ängste auslösen, die dauerhaft das Essverhalten beeinflussen.</string>
+    <string name="content_slide_3_bullet_point_3">- Geringes Interesse am Essen: Manche Kinder haben wenig Hunger oder scheinen das Essen „zu vergessen“. Das kann ein Zeichen für ARFID sein.</string>
+    <string name="content_slide_3_Abschluss">
+        Wichtig ist: Diese Ursachen sind keine Schuld der Eltern oder des Kindes. Es handelt sich um eine Essstörung, die Verständnis und Unterstützung braucht.
+    </string>
+       <string name="content_slide_4_intro">
+        Unbehandeltes ARFID kann langfristige Folgen haben, wie:
+    </string>
+    <string name="content_slide_4_bullet_point_1">
+        - Nährstoffmangel, der die Gesundheit und das Wachstum Ihres Kindes beeinträchtigen kann.
+    </string>
+    <string name="content_slide_4_bullet_point_2">
+        - Soziale Isolation, weil Ihr Kind Esssituationen meidet.
+    </string>
+    <string name="content_slide_4_bullet_point_3">
+        - Stress in der Familie, wenn Mahlzeiten zu einem täglichen Konflikt werden.
+    </string>
+    <string name="content_slide_4_Abschluss">
+        Aber es gibt gute Nachrichten: Mit der richtigen Unterstützung können Kinder lernen, ihre Ängste zu überwinden und ein gesundes Essverhalten zu entwickeln. In der Section „Ihr Kind unterstützen“ finden Sie praktische Tipps, um loszulegen.
+    </string>
+
+
+    <!-- Bereich Kind unterstuetzen -->
+
+    <!-- Titel -->
+
+<string name="kind_unterstuetzen_title_Slide_1">Wie können Sie Ihrem Kind helfen?</string>
+    <string name="kind_unterstuetzen_title_Slide_2">Stressfreie Mahlzeiten gestalten</string>
+    <string name="kind_unterstuetzen_title_Slide_3">Neue Lebensmittel schrittweise einführen</string>
+    <string name="kind_unterstuetzen_title_Slide_4">Emotionale Unterstützung geben</string>
+    <string name="kind_unterstuetzen_title_Slide_5">Unterstützung von Fachkräften einholen</string>
+    <string name="kind_unterstuetzen_title_Slide_6">Selbstfürsorge für Eltern</string>
+
+    <!-- Beschreibungen -->
+
+    <string name="kind_unterstuetzen_slide_1_intro">
+        Das Essverhalten eines Kindes mit ARFID zu ändern, braucht Zeit, Geduld und Einfühlungsvermögen. Aber Sie können eine entscheidende Rolle spielen, indem Sie:
+    </string>
+    <string name="kind_unterstuetzen_slide_1_bullet_point_1">- Eine stressfreie Atmosphäre bei Mahlzeiten schaffen.</string>
+    <string name="kind_unterstuetzen_slide_1_bullet_point_2">- Ihr Kind ermutigen, ohne Druck auszuüben.</string>
+    <string name="kind_unterstuetzen_slide_1_bullet_point_3">- Gemeinsam mit Fachkräften kleine Ziele setzen.</string>
+    <string name="kind_unterstuetzen_slide_1_conclusion">Starten Sie mit einfachen Veränderungen – jeder kleine Fortschritt ist ein Erfolg.</string>
+    <string name="kind_unterstuetzen_slide_2_intro">
+        Mahlzeiten können schnell zu Konflikten führen. Mit diesen Tipps schaffen Sie eine entspannte Umgebung:
+    </string>
+    <string name="kind_unterstuetzen_slide_2_bullet_point_1">
+        - Vermeiden Sie Druck: Sagen Sie Sätze wie „Iss das jetzt“ oder „Nur ein Bissen“. Stattdessen können Sie fragen: „Möchtest du probieren?“
+    </string>
+    <string name="kind_unterstuetzen_slide_2_bullet_point_2">
+        - Bieten Sie Alternativen an: Haben Sie immer ein oder zwei Lebensmittel auf dem Tisch, die Ihr Kind gerne mag.
+    </string>
+    <string name="kind_unterstuetzen_slide_2_bullet_point_3">
+        - Loben Sie kleine Fortschritte: Wenn Ihr Kind etwas Neues probiert, auch nur eine kleine Menge, ist das ein großer Schritt.
+    </string>
+    <string name="kind_unterstuetzen_slide_3_intro">
+        Kinder mit ARFID lehnen oft alles Neue ab. Mit diesen Schritten können Sie den Umgang mit Lebensmitteln verbessern:
+    </string>
+    <string name="kind_unterstuetzen_slide_3_bullet_point_1">
+        - Berühren: Lassen Sie Ihr Kind das neue Lebensmittel anfassen.
+    </string>
+    <string name="kind_unterstuetzen_slide_3_bullet_point_2">
+        - Riechen: Bringen Sie es Ihrem Kind näher, ohne es zum Essen zu drängen.
+    </string>
+    <string name="kind_unterstuetzen_slide_3_bullet_point_3">
+        - Probieren: Bieten Sie nur eine winzige Menge an – der erste Bissen zählt!
+    </string>
+    <string name="kind_unterstuetzen_slide_4_intro">
+        Ihr Kind braucht nicht nur praktische Hilfe, sondern auch emotionalen Rückhalt. Hier sind einige Tipps:
+    </string>
+    <string name="kind_unterstuetzen_slide_4_bullet_point_1">
+        - Zeigen Sie Verständnis: Sagen Sie Dinge wie „Ich weiß, dass das Essen für dich schwer ist. Wir finden das gemeinsam heraus.“
+    </string>
+    <string name="kind_unterstuetzen_slide_4_bullet_point_2">
+        - Feiern Sie Erfolge: Loben Sie Ihr Kind, wenn es neue Dinge ausprobiert, auch wenn es nur kleine Schritte sind.
+    </string>
+    <string name="kind_unterstuetzen_slide_4_bullet_point_3">
+        - Seien Sie geduldig: Veränderungen brauchen Zeit. Rückschritte sind normal – bleiben Sie ermutigend.
+    </string>
+    <string name="kind_unterstuetzen_slide_5_intro">
+        Manchmal ist professionelle Hilfe notwendig. So können Sie die richtigen Expert:innen finden:
+    </string>
+    <string name="kind_unterstuetzen_slide_5_bullet_point_1">
+        - Sprechen Sie mit Ihrem Kinderarzt: Lassen Sie sich an Spezialist:innen für Essstörungen überweisen.
+    </string>
+    <string name="kind_unterstuetzen_slide_5_bullet_point_2">
+        - Arbeiten Sie mit einem Team: Ein interdisziplinärer Ansatz – mit Psycholog:innen, Ernährungsberater:innen und Kinderärzt:innen – kann helfen.
+    </string>
+    <string name="kind_unterstuetzen_slide_6_intro">
+        Vergessen Sie nicht, auch auf sich selbst zu achten. Ein stressfreies Elternteil kann die besten Entscheidungen für sein Kind treffen:
+    </string>
+    <string name="kind_unterstuetzen_slide_6_bullet_point_1">
+        - Pausen einlegen: Nehmen Sie sich Zeit für sich selbst, auch wenn es nur 10 Minuten sind.
+    </string>
+    <string name="kind_unterstuetzen_slide_6_bullet_point_2">
+        - Unterstützung suchen: Tauschen Sie sich mit anderen Eltern aus, die Ähnliches erleben.
+    </string>
+
+    <string name="google_maps_api_key">AIzaSyCNH3Lj_ZgN0anOYx0GdTFsWt5X10X9LR4</string>
+
+    <!-- Bereich Erfahrungsberichte -->
+        <string name="headline_erfahrungsberichte">Erfahrungsberichte von Eltern</string>
+        <string name="intro_erfahrungsberichte">Sie sind nicht allein. Hier teilen Eltern ihre Erfahrungen mit ARFID.</string>
+
+
+    </resources>

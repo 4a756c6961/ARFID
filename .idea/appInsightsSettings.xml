@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.arfid" />
+                  <option name="mobileSdkAppId" value="1:1049285791978:android:bbde70146c7abeae8d4793" />
+                  <option name="projectId" value="arfidforum" />
+                  <option name="projectNumber" value="1049285791978" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

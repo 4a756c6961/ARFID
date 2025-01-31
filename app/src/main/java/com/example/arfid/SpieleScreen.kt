@@ -11,13 +11,14 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun NachrichtenScreen() {
+fun SpieleScreen() {
     Box(modifier = Modifier
-        .fillMaxSize(),
+      .fillMaxSize(),
         contentAlignment = Alignment.Center){
-        Text(text = "Nachrichten",
+        Text(text = "Hier sollten in Zukunft Spiele entstehen",
             fontFamily = FontFamily.SansSerif,
             fontSize = 30.sp)
     }
 
-}
+  }
+
